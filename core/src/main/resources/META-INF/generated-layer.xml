@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="View">
+            <file name="org-netbeans-core-actions-LogAction.instance">
+                <!--org.netbeans.core.actions.LogAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.actions.Bundle#MSG_LogTab_name" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.actions.LogAction"/>
+                <attr name="iconBase" stringvalue="org/netbeans/core/resources/log-file.gif"/>
+                <attr boolvalue="true" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="View">
+            <file name="org-netbeans-core-actions-LogAction.shadow">
+                <!--org.netbeans.core.actions.LogAction-->
+                <attr name="originalFile" stringvalue="Actions/View/org-netbeans-core-actions-LogAction.instance"/>
+                <attr intvalue="500" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="PropertyEditorManager">
+            <file name="Package-org-netbeans-beaninfo-editors.instance">
+                <!--org.netbeans.beaninfo.editors-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createPackageRegistration" name="instanceCreate"/>
+                <attr name="packagePath" stringvalue="org.netbeans.beaninfo.editors"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$PEPackageRegistration"/>
+            </file>
+            <file name="Class-org-netbeans-beaninfo-editors-BoolEditor.instance">
+                <!--org.netbeans.beaninfo.editors.BoolEditor-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createClassRegistration" name="instanceCreate"/>
+                <attr name="propertyEditorClass" stringvalue="org.netbeans.beaninfo.editors.BoolEditor"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$PEClassRegistration"/>
+                <attr name="targetType.1" stringvalue="java.lang.Boolean"/>
+            </file>
+            <file name="Class-org-netbeans-beaninfo-editors-CharEditor.instance">
+                <!--org.netbeans.beaninfo.editors.CharEditor-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createClassRegistration" name="instanceCreate"/>
+                <attr name="propertyEditorClass" stringvalue="org.netbeans.beaninfo.editors.CharEditor"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$PEClassRegistration"/>
+                <attr name="targetType.1" stringvalue="java.lang.Character"/>
+                <attr name="targetType.2" stringvalue="char"/>
+            </file>
+            <file name="Class-org-netbeans-beaninfo-editors-IntEditor.instance">
+                <!--org.netbeans.beaninfo.editors.IntEditor-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createClassRegistration" name="instanceCreate"/>
+                <attr name="propertyEditorClass" stringvalue="org.netbeans.beaninfo.editors.IntEditor"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$PEClassRegistration"/>
+                <attr name="targetType.1" stringvalue="java.lang.Integer"/>
+            </file>
+            <file name="Class-org-netbeans-beaninfo-editors-StringArrayEditor.instance">
+                <!--org.netbeans.beaninfo.editors.StringArrayEditor-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createClassRegistration" name="instanceCreate"/>
+                <attr name="propertyEditorClass" stringvalue="org.netbeans.beaninfo.editors.StringArrayEditor"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$PEClassRegistration"/>
+                <attr name="targetType.1" stringvalue="java.lang.String[]"/>
+            </file>
+        </folder>
+        <folder name="Introspector">
+            <file name="BeanInfo-org-netbeans-beaninfo.instance">
+                <!--org.netbeans.beaninfo-->
+                <attr
+                    methodvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport.createBeanInfoRegistration" name="instanceCreate"/>
+                <attr name="packagePath" stringvalue="org.netbeans.beaninfo"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.modules.openide.nodes.NodesRegistrationSupport$BeanInfoRegistration"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

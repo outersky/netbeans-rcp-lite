@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="OutputSettings.instance">
+                <!--org.netbeans.core.output2.options.OutputSettingsOptionsPanelController-->
+                <attr
+                    methodvalue="org.netbeans.spi.options.AdvancedOption.createSubCategory" name="instanceCreate"/>
+                <attr name="controller" newvalue="org.netbeans.core.output2.options.OutputSettingsOptionsPanelController"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#AdvancedOption_DisplayName_OutputSettings" name="displayName"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#AdvancedOption_Keywords_OutputSettings" name="keywords"/>
+                <attr name="keywordsCategory" stringvalue="Advanced/OutputSettings"/>
+            </file>
+        </folder>
+        <folder name="Keywords">
+            <file name="org.netbeans.core.output2.options.OutputSettingsPanel">
+                <!--org.netbeans.core.output2.options.OutputSettingsPanel-->
+                <attr name="location" stringvalue="Advanced"/>
+                <attr name="tabTitle" stringvalue="Output"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#KW_Output_Window" name="keywords-1"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#KW_Font" name="keywords-2"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#KW_Color" name="keywords-3"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#KW_Underline" name="keywords-4"/>
+                <attr
+                    bundlevalue="org.netbeans.core.output2.options.Bundle#KW_Background" name="keywords-5"/>
+                <attr name="keywords-6" stringvalue="Output Window"/>
+                <attr name="keywords-7" stringvalue="Font"/>
+                <attr name="keywords-8" stringvalue="Color"/>
+                <attr name="keywords-9" stringvalue="Underline"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

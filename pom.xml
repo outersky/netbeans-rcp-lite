@@ -24,6 +24,7 @@
         <module>ui-handler</module>
         <module>filesystems</module>
         <module>filesystems-nb</module>
+        <module>execution</module>
         <module>queries</module>
         <module>file-templates</module>
         <module>intent</module>
@@ -56,6 +57,11 @@
         <module>tabcontrol</module>
         <module>explorer</module>
         <module>datasystems</module>
+        <module>sampler</module>
+        <module>core</module>
+        <module>options-dialog</module>
+        <module>keymap-options</module>
+        <module>output-window</module>
     </modules>
 
 
