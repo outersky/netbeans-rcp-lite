@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.hillwind.netbeans</groupId>
+    <artifactId>netbeans</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>insane</module>
+        <module>common-annotations</module>
+        <module>lookup</module>
+        <module>nbjunit</module>
+        <module>basic-util</module>
+        <module>ui-util</module>
+        <module>ui-handler</module>
+        <module>filesystems</module>
+        <module>modules</module>
+        <module>awt-util</module>
+        <module>progress</module>
+        <module>progress-swing</module>
+        <module>dialogs</module>
+        <module>nodes</module>
+        <module>windows</module>
+        <module>visual</module>
+        <module>outline</module>
+        <module>tabcontrol</module>
+        <module>explorer</module>
+    </modules>
+
+
+</project>
