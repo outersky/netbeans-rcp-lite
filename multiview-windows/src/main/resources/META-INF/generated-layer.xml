@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="org-netbeans-core-multiview-ClearSplitAction.instance">
+                <!--org.netbeans.core.multiview.ClearSplitAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.multiview.Bundle#LBL_ClearSplitAction" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.multiview.ClearSplitAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-netbeans-core-multiview-SplitDocumentHorizontallyAction.instance">
+                <!--org.netbeans.core.multiview.SplitDocumentHorizontallyAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.multiview.Bundle#LBL_ValueSplitHorizontal" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.multiview.SplitDocumentHorizontallyAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-netbeans-core-multiview-SplitDocumentVerticallyAction.instance">
+                <!--org.netbeans.core.multiview.SplitDocumentVerticallyAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.multiview.Bundle#LBL_ValueSplitVertical" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.multiview.SplitDocumentVerticallyAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="DOS-C.shadow">
+            <!--org.netbeans.core.multiview.ClearSplitAction-->
+            <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-multiview-ClearSplitAction.instance"/>
+        </file>
+        <file name="DOS-H.shadow">
+            <!--org.netbeans.core.multiview.SplitDocumentHorizontallyAction-->
+            <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-multiview-SplitDocumentHorizontallyAction.instance"/>
+        </file>
+        <file name="DOS-V.shadow">
+            <!--org.netbeans.core.multiview.SplitDocumentVerticallyAction-->
+            <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-multiview-SplitDocumentVerticallyAction.instance"/>
+        </file>
+    </folder>
+</filesystem>

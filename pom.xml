@@ -13,6 +13,7 @@
     </properties>
 
     <modules>
+        <module>lookfeel</module>
         <module>insane</module>
         <module>common-annotations</module>
         <module>lookup</module>
@@ -31,9 +32,14 @@
         <module>mimelookup</module>
         <module>mimelookupimpl</module>
         <module>modules</module>
+        <module>multiview-windows</module>
+        <module>bootstrap</module>
+        <module>startup-base</module>
+        <module>startup</module>
         <module>awt-util</module>
         <module>progress</module>
         <module>progress-swing</module>
+        <module>keyring</module>
         <module>dialogs</module>
         <module>nodes</module>
         <module>windows</module>
