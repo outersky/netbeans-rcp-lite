@@ -34,6 +34,8 @@
         <module>modules</module>
         <module>multiview-windows</module>
         <module>bootstrap</module>
+        <module>master-fs</module>
+        <module>master-fs-ui</module>
         <module>startup-base</module>
         <module>startup</module>
         <module>awt-util</module>
@@ -41,6 +43,8 @@
         <module>progress-swing</module>
         <module>keyring</module>
         <module>dialogs</module>
+        <module>keyring-fallback</module>
+        <module>keyring-impl</module>
         <module>nodes</module>
         <module>windows</module>
         <module>quicksearch</module>

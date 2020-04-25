@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="System">
+            <file name="org-netbeans-modules-masterfs-ui-suspend-PauseAction.instance">
+                <!--org.netbeans.modules.masterfs.ui.suspend.PauseAction-->
+                <attr
+                    bundlevalue="org.netbeans.modules.masterfs.ui.suspend.Bundle#CTL_PauseAction" name="displayName"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.masterfs.ui.suspend.PauseAction"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="Memory">
+            <file name="org-netbeans-modules-masterfs-ui-suspend-PauseAction.shadow">
+                <!--org.netbeans.modules.masterfs.ui.suspend.PauseAction-->
+                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-modules-masterfs-ui-suspend-PauseAction.instance"/>
+                <attr intvalue="15000" name="position"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
