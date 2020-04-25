@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Services">
+        <folder name="MIMEResolver">
+            <file name="org-openide-loaders-DataLoaderPool$InstanceLoaderSystem-Extension.xml">
+                <!--org.openide.loaders.DataLoaderPool.InstanceLoaderSystem-->
+                <attr
+                    methodvalue="org.openide.filesystems.MIMEResolver.create" name="instanceCreate"/>
+                <attr name="instanceClass" stringvalue="org.openide.filesystems.MIMEResolver"/>
+                <attr name="mimeType" stringvalue="application/x-nbsettings"/>
+                <attr name="ext.0" stringvalue="instance"/>
+                <attr name="ext.1" stringvalue="settings"/>
+                <attr intvalue="44" name="position"/>
+                <attr
+                    bundlevalue="org.openide.loaders.Bundle#CTL_SettingsFile" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

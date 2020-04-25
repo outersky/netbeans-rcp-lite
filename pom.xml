@@ -16,11 +16,20 @@
         <module>insane</module>
         <module>common-annotations</module>
         <module>lookup</module>
+        <module>scripting</module>
         <module>nbjunit</module>
         <module>basic-util</module>
         <module>ui-util</module>
         <module>ui-handler</module>
         <module>filesystems</module>
+        <module>filesystems-nb</module>
+        <module>queries</module>
+        <module>file-templates</module>
+        <module>intent</module>
+        <module>io</module>
+        <module>io-swing</module>
+        <module>mimelookup</module>
+        <module>mimelookupimpl</module>
         <module>modules</module>
         <module>awt-util</module>
         <module>progress</module>
@@ -28,10 +37,15 @@
         <module>dialogs</module>
         <module>nodes</module>
         <module>windows</module>
+        <module>quicksearch</module>
+        <module>io-ui</module>
+        <module>text</module>
+        <module>actions</module>
         <module>visual</module>
         <module>outline</module>
         <module>tabcontrol</module>
         <module>explorer</module>
+        <module>datasystems</module>
     </modules>
 
 
