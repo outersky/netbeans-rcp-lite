@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="org-netbeans-core-windows-actions-ResetWindowsAction.instance">
+                <!--org.netbeans.core.windows.actions.ResetWindowsAction.reset()-->
+                <attr
+                    bundlevalue="org.netbeans.core.windows.actions.Bundle#CTL_ResetWindows" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr
+                    methodvalue="org.netbeans.core.windows.actions.ResetWindowsAction.reset" name="delegate"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-netbeans-core-windows-actions-ReloadWindowsAction.instance">
+                <!--org.netbeans.core.windows.actions.ResetWindowsAction.reload()-->
+                <attr
+                    bundlevalue="org.netbeans.core.windows.actions.Bundle#CTL_ReloadWindows" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr
+                    methodvalue="org.netbeans.core.windows.actions.ResetWindowsAction.reload" name="delegate"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-netbeans-core-windows-actions-SaveWindowsAction.instance">
+                <!--org.netbeans.core.windows.actions.SaveWindowsAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.windows.actions.Bundle#CTL_SaveWindowsAction" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.windows.actions.SaveWindowsAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-netbeans-core-windows-actions-SwitchRoleKeepDocumentsAction.instance">
+                <!--org.netbeans.core.windows.actions.SwitchRoleKeepDocumentsAction-->
+                <attr
+                    bundlevalue="org.netbeans.core.windows.actions.Bundle#CTL_SwitchRoleKeepDocumentsAction" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.core.windows.actions.SwitchRoleKeepDocumentsAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="System">
+            <file name="org-netbeans-core-windows-model-NewMode.instance">
+                <!--org.netbeans.core.windows.design.DesignView.newModeAction()-->
+                <attr
+                    bundlevalue="org.netbeans.core.windows.design.Bundle#CTL_NewMode" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr
+                    methodvalue="org.netbeans.core.windows.design.DesignView.newModeAction" name="delegate"/>
+                <attr name="iconBase" stringvalue="org/netbeans/core/windows/design/DesignView.png"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="org-netbeans-core-windows-actions-ResetWindowsAction.shadow">
+                <!--org.netbeans.core.windows.actions.ResetWindowsAction.reset()-->
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-ResetWindowsAction.instance"/>
+                <attr intvalue="20200" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <folder name="Appearance">
+            <file name="org-netbeans-core-windows-options-LafOptionsPanelController.instance">
+                <!--org.netbeans.core.windows.options.LafOptionsPanelController-->
+                <attr
+                    methodvalue="org.netbeans.spi.options.AdvancedOption.createSubCategory" name="instanceCreate"/>
+                <attr name="controller" newvalue="org.netbeans.core.windows.options.LafOptionsPanelController"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#Laf_DisplayName" name="displayName"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_LafOptions" name="keywords"/>
+                <attr name="keywordsCategory" stringvalue="Appearance/LaF"/>
+            </file>
+            <file name="DocumentTabs.instance">
+                <!--org.netbeans.core.windows.options.TabsOptionsPanelController-->
+                <attr
+                    methodvalue="org.netbeans.spi.options.AdvancedOption.createSubCategory" name="instanceCreate"/>
+                <attr name="controller" newvalue="org.netbeans.core.windows.options.TabsOptionsPanelController"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#Tabs_DisplayName" name="displayName"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_TabsOptions" name="keywords"/>
+                <attr name="keywordsCategory" stringvalue="Appearance/Tabs"/>
+            </file>
+            <file name="Windows.instance">
+                <!--org.netbeans.core.windows.options.WinSysOptionsPanelController-->
+                <attr
+                    methodvalue="org.netbeans.spi.options.AdvancedOption.createSubCategory" name="instanceCreate"/>
+                <attr name="controller" newvalue="org.netbeans.core.windows.options.WinSysOptionsPanelController"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#AdvancedOption_DisplayName_WinSys" name="displayName"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_WindowOptions" name="keywords"/>
+                <attr name="keywordsCategory" stringvalue="Appearance/Windows"/>
+            </file>
+            <!--org.netbeans.core.windows.options-->
+            <attr intvalue="0" name="position"/>
+        </folder>
+        <folder name="Keywords">
+            <file name="org.netbeans.core.windows.options.LafPanel">
+                <!--org.netbeans.core.windows.options.LafPanel-->
+                <attr name="location" stringvalue="Appearance"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#Laf_DisplayName" name="tabTitle"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_LafOptions" name="keywords-1"/>
+            </file>
+            <file name="org.netbeans.core.windows.options.TabsPanel">
+                <!--org.netbeans.core.windows.options.TabsPanel-->
+                <attr name="location" stringvalue="Appearance"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#Tabs_DisplayName" name="tabTitle"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_TabsOptions" name="keywords-1"/>
+            </file>
+            <file name="org.netbeans.core.windows.options.WinSysPanel">
+                <!--org.netbeans.core.windows.options.WinSysPanel-->
+                <attr name="location" stringvalue="Appearance"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#AdvancedOption_DisplayName_WinSys" name="tabTitle"/>
+                <attr
+                    bundlevalue="org.netbeans.core.windows.options.Bundle#KW_WindowOptions" name="keywords-1"/>
+            </file>
+        </folder>
+        <file name="Appearance.instance">
+            <!--org.netbeans.core.windows.options-->
+            <attr
+                methodvalue="org.netbeans.spi.options.OptionsCategory.createCategory" name="instanceCreate"/>
+            <attr name="advancedOptionsFolder" stringvalue="OptionsDialog/Appearance"/>
+            <attr
+                bundlevalue="org.netbeans.core.windows.options.Bundle#OptionsCategory_Name_Appearance" name="categoryName"/>
+            <attr intvalue="750" name="position"/>
+            <attr name="iconBase" stringvalue="org/netbeans/core/windows/options/appearance32.png"/>
+            <attr
+                bundlevalue="org.netbeans.core.windows.options.Bundle#OptionsCategory_Keywords_Appearance" name="keywords"/>
+            <attr name="keywordsCategory" stringvalue="Appearance"/>
+        </file>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="org_netbeans_core_windows_model">
+                <file name="DesignViewComponent" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--org.netbeans.core.windows.design.DesignViewComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//org.netbeans.core.windows.model//DesignViewComponent//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="org">
+                <folder name="netbeans">
+                    <folder name="core">
+                        <folder name="windows">
+                            <folder name="design">
+                                <file name="DesignViewComponent">
+                                    <!--org.netbeans.core.windows.design.DesignViewComponent-->
+                                    <attr name="settings.providerPath" stringvalue="xml/lookups//org_netbeans_core_windows_model/DesignViewComponent.instance"/>
+                                </file>
+                            </folder>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="org_netbeans_core_windows_model">
+                <file name="DesignViewComponent.instance">
+                    <!--org.netbeans.core.windows.design.DesignViewComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="org.netbeans.core.windows.design.DesignViewComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="org.netbeans.core.windows.design.DesignViewComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

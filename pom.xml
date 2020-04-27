@@ -42,12 +42,14 @@
         <module>awt-util</module>
         <module>progress</module>
         <module>progress-swing</module>
+        <module>progress-ui</module>
         <module>keyring</module>
         <module>dialogs</module>
         <module>keyring-fallback</module>
         <module>keyring-impl</module>
         <module>nodes</module>
         <module>windows</module>
+        <module>dark-theme</module>
         <module>quicksearch</module>
         <module>io-ui</module>
         <module>text</module>
@@ -57,11 +59,17 @@
         <module>tabcontrol</module>
         <module>explorer</module>
         <module>datasystems</module>
+        <module>print</module>
+        <module>favorites</module>
         <module>sampler</module>
         <module>core</module>
         <module>options-dialog</module>
         <module>keymap-options</module>
         <module>output-window</module>
+        <module>settings</module>
+        <module>settings-options</module>
+        <module>core-ui</module>
+        <module>core-windows</module>
     </modules>
 
 

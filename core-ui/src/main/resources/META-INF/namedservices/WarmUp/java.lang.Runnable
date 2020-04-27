@@ -1,0 +1,3 @@
+org.netbeans.core.ui.warmup.DiagnosticTask
+org.netbeans.core.ui.warmup.DnDWarmUpTask
+org.netbeans.core.ui.warmup.MenuWarmUpTask
