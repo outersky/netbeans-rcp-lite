@@ -578,10 +578,11 @@ public class NbBundle extends Object {
         }
 
         ResourceBundle master = null;
-
+        Class cls = null;
         for (String suffix : suffixes) {
             try {
-                Class<? extends ResourceBundle> c = Class.forName(name + suffix, true, l).asSubclass(ResourceBundle.class);
+                cls = Class.forName(name + suffix, true, l);
+                Class<? extends ResourceBundle> c = cls.asSubclass(ResourceBundle.class);
                 ResourceBundle b = c.newInstance();
 
                 if (master == null) {
@@ -593,6 +594,7 @@ public class NbBundle extends Object {
                 // fine - ignore
             } catch (Exception e) {
                 LOG.log(Level.WARNING, null, e);
+                LOG.log(Level.WARNING, "found class: " + cls);
             } catch (LinkageError e) {
                 LOG.log(Level.WARNING, null, e);
             }
