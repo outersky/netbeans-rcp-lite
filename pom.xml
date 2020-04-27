@@ -13,6 +13,7 @@
     </properties>
 
     <modules>
+        <module>migrate-util</module>
         <module>lookfeel</module>
         <module>insane</module>
         <module>common-annotations</module>
