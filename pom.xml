@@ -69,7 +69,19 @@
         <module>settings</module>
         <module>settings-options</module>
         <module>core-ui</module>
+        <module>core-network</module>
+        <module>core-execution</module>
         <module>core-windows</module>
+        <module>native-access</module>
+        <module>autoupdate-updater</module>
+        <module>autoupdate-service</module>
+        <module>autoupdate-ui</module>
+        <module>cli-util</module>
+        <module>autoupdate-cli</module>
+        <module>flatlaf-nb</module>
+        <module>janitor</module>
+        <module>rcp</module>
+        <module>templates</module>
     </modules>
 
 
