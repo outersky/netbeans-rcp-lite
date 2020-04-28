@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.openide.util.*, org.openide.util.i
+ o.*, org.openide.util.spi.*, org.openide.xml.*
+OpenIDE-Module-Module-Dependencies: org.openide.util.lookup > 8.14
+OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.openide.util
+OpenIDE-Module-Localizing-Bundle: org/openide/util/base/Bundle.propert
+ ies
+OpenIDE-Module-Specification-Version: 9.14
+

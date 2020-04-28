@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Module-Dependencies: org.netbeans.api.annotations.commo
+ n/1 > 1.34, org.netbeans.api.progress/1 > 1.54, org.netbeans.modules.
+ options.api/1 > 1.52, org.openide.awt > 7.75, org.openide.dialogs > 7
+ .49, org.openide.filesystems > 9.17, org.openide.modules > 7.55, org.
+ openide.util > 9.14, org.openide.util.lookup > 8.40, org.openide.util
+ .ui > 9.15, org.openide.windows > 6.84
+OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.modules.janitor
+OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/janitor/Bundle.
+ properties
+OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+

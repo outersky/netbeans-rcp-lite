@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Module-Dependencies: org.openide.modules > 7.55, org.op
+ enide.util > 9.14, org.openide.util.ui > 9.15, org.netbeans.libs.flat
+ laf > 1.0, org.netbeans.swing.plaf > 1.48, org.netbeans.swing.tabcont
+ rol > 1.63, org.openide.awt > 7.75
+OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module-Install: org/netbeans/swing/laf/flatlaf/Installer.class
+OpenIDE-Module-Layer: org/netbeans/swing/laf/flatlaf/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/netbeans/swing/laf/flatlaf/Bundl
+ e.properties
+OpenIDE-Module: org.netbeans.swing.laf.flatlaf
+OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+

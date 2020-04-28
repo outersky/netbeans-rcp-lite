@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.netbeans.swing.popupswitcher.*, or
+ g.netbeans.swing.tabcontrol.*, org.netbeans.swing.tabcontrol.customta
+ bs.*, org.netbeans.swing.tabcontrol.event.*, org.netbeans.swing.tabco
+ ntrol.plaf.*
+OpenIDE-Module-Module-Dependencies: org.openide.awt > 7.38, org.openid
+ e.util.ui > 9.12, org.openide.util > 9.3, org.openide.util.lookup > 8
+ .0, org.openide.windows > 6.4
+OpenIDE-Module-Java-Dependencies: Java > 1.6
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module-Localizing-Bundle: org/netbeans/swing/tabcontrol/Bundle
+ .properties
+OpenIDE-Module: org.netbeans.swing.tabcontrol
+OpenIDE-Module-Specification-Version: 1.63
+AutoUpdate-Essential-Module: true
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+

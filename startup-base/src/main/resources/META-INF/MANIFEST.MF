@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.netbeans.core.startup.layers.*, or
+ g.netbeans.core.startup.base.*
+OpenIDE-Module-Friends: org.netbeans.core, org.netbeans.core.execution
+ , org.netbeans.core.netigso, org.netbeans.core.osgi, org.netbeans.cor
+ e.registry, org.netbeans.modules.apisupport.ant, org.netbeans.modules
+ .autoupdate.services, org.netbeans.modules.ide.ergonomics, org.netbea
+ ns.modules.java.hints.test, org.netbeans.modules.maven.apisupport, or
+ g.netbeans.modules.modulemanager, org.netbeans.modules.options.api, o
+ rg.netbeans.modules.settings, com.oracle.jdeveloper.extcache, org.net
+ beans.modules.apisupport.ant
+OpenIDE-Module-Module-Dependencies: org.openide.filesystems > 9.4, org
+ .openide.modules > 7.46, org.openide.util > 9.3, org.openide.util.loo
+ kup > 8.30
+OpenIDE-Module-Java-Dependencies: Java > 1.6
+OpenIDE-Module-Build-Version: 11.3-6b879cb782eaa4f13a731aff82eada11289
+ a66f7
+OpenIDE-Module-Specification-Version: 1.69.0.1
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.core.startup.base
+OpenIDE-Module-Localizing-Bundle: org/netbeans/core/startup/base/Bundl
+ e.properties
+OpenIDE-Module-Implementation-Version: 1
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+

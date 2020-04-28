@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.netbeans.api.autoupdate.*, org.net
+ beans.spi.autoupdate.*
+OpenIDE-Module-Module-Dependencies: org.netbeans.api.progress/1 > 1.40
+ , org.netbeans.api.progress.nb > 1.40, org.netbeans.bootstrap/1 > 2.7
+ 4, org.netbeans.core.startup/1 > 1.60, org.netbeans.core.startup.base
+  > 1.60, org.openide.filesystems > 9.0, org.openide.modules > 7.25, o
+ rg.openide.util > 9.3, org.openide.util.lookup > 8.0, org.openide.uti
+ l.ui > 9.3
+OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.modules.autoupdate.services
+OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/autoupdate/serv
+ ices/resources/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.62
+OpenIDE-Module-Layer: org/netbeans/modules/autoupdate/services/resourc
+ es/layer.xml
+AutoUpdate-Essential-Module: true
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+Class-Path: ext/updater.jar
+

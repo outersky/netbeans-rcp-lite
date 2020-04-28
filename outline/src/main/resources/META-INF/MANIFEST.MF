@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.netbeans.swing.etable.*, org.netbe
+ ans.swing.outline.*
+OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.swing.outline
+OpenIDE-Module-Localizing-Bundle: org/netbeans/swing/outline/Bundle.pr
+ operties
+OpenIDE-Module-Specification-Version: 1.41
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+
