@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rcp</artifactId>
+    <artifactId>search</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -16,116 +16,116 @@
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>autoupdate-service</artifactId>
+            <artifactId>actions</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>autoupdate-ui</artifactId>
+            <artifactId>basic-util</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>autoupdate-cli</artifactId>
+            <artifactId>common-annotations</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>datasystems</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>core-ui</artifactId>
+            <artifactId>dialogs</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>core-windows</artifactId>
+            <artifactId>outline</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>dark-theme</artifactId>
+            <artifactId>explorer</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>favorites</artifactId>
+            <artifactId>filesystems</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>flatlaf-nb</artifactId>
+            <artifactId>filesystems-nb</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>janitor</artifactId>
+            <artifactId>queries</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>keymap-options</artifactId>
+            <artifactId>io-swing</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>lookfeel</artifactId>
+            <artifactId>lookup</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>master-fs</artifactId>
+            <artifactId>modules</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>options-dialog</artifactId>
+            <artifactId>nodes</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>print</artifactId>
+            <artifactId>progress</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>search</artifactId>
+            <artifactId>progress-swing</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>quicksearch</artifactId>
+            <artifactId>text</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>lookfeel</artifactId>
+            <artifactId>awt-util</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.main</artifactId>
-            <version>6.0.3</version>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>windows</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
@@ -135,14 +135,15 @@
             <scope>test</scope>
         </dependency>
 
-<!--
-        <dependency>
-            <groupId>cn.hillwind.netbeans</groupId>
-            <artifactId>nbjunit</artifactId>
-            <version>1.0.0</version>
-            <scope>test</scope>
-        </dependency>
--->
+
+        <!--
+                <dependency>
+                    <groupId>cn.hillwind.netbeans</groupId>
+                    <artifactId>nbjunit</artifactId>
+                    <version>1.0.0</version>
+                    <scope>test</scope>
+                </dependency>
+        -->
 
     </dependencies>
     <build>

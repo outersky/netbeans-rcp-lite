@@ -21,6 +21,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
 //        fixBundles();
         fixManifestFiles();
+        handlePlatform("api.search", "search");
+
     }
 
     private static void fixManifestFiles() throws Exception {
@@ -82,6 +84,7 @@ public class Main {
         handleModule("org-netbeans-api-search.jar", "quicksearch");
 //        handleModule("core.kit", "rcp");
         handleModule("org-netbeans-modules-sampler.jar", "sampler");
+        handleModule("org-netbeans-api-search.jar", "search");
         handleModule("org-netbeans-api-scripting.jar", "scripting");
         handleModule("org-netbeans-modules-settings.jar", "settings");
         handleModule("org-openide-options.jar", "settings-options");
@@ -201,6 +204,7 @@ public class Main {
         handlePlatform("spi.quicksearch", "quicksearch");
         handlePlatform("core.kit", "rcp");
         handlePlatform("sampler", "sampler");
+        handlePlatform("api.search", "search");
         handlePlatform("api.scripting", "scripting");
         handlePlatform("settings", "settings");
         handlePlatform("openide.options", "settings-options");
