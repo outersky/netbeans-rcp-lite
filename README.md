@@ -1,3 +1,21 @@
-# netbeans
+# netbeans-rcp-lite
 
-netbeans 的maven 迁移版本，学习里面的模块化思想
+The original netbeans project uses ant to build, I just tried to remove all build magic and make it a simple maven project. 
+
+## build
+
+```
+mvn clean install
+```
+
+## run rcp demo
+
+```
+mvn -p rcp
+```
+
+or in Netbeans, right click rcp project, and click `Run`
+
+## screenshots
+
+![RCP demo](doc/rcp-demo.png)
