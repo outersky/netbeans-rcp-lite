@@ -118,7 +118,49 @@
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>output-window</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
             <artifactId>lookfeel</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>startup</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>startup-base</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>lib-flatlaf</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>awt-util</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>ui-util</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>basic-util</artifactId>
             <version>1.0.0</version>
         </dependency>
 

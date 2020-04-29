@@ -1,26 +1,21 @@
 Manifest-Version: 1.0
 Ant-Version: Apache Ant 1.10.5
 Created-By: 1.8.0_191-b12 (Oracle Corporation)
-OpenIDE-Module-Public-Packages: org.netbeans.api.search.*, org.netbean
- s.api.search.provider.*, org.netbeans.api.search.ui.*, org.netbeans.s
- pi.search.*, org.netbeans.spi.search.provider.*
+OpenIDE-Module-Public-Packages: org.netbeans.spi.quicksearch.*
 OpenIDE-Module-Module-Dependencies: org.netbeans.api.annotations.commo
- n/1 > 1.13, org.netbeans.api.progress/1 > 1.40, org.netbeans.api.prog
- ress.nb > 1.40, org.netbeans.modules.queries/1 > 1.27, org.netbeans.s
- wing.outline > 1.19, org.openide.actions > 6.25, org.openide.awt > 7.
- 51, org.openide.dialogs > 7.24, org.openide.explorer > 6.42, org.open
- ide.filesystems > 9.0, org.openide.filesystems.nb > 9.0, org.openide.
- io > 1.30, org.openide.loaders > 7.61, org.openide.modules > 7.28, or
- g.openide.nodes > 7.27, org.openide.text > 6.44, org.openide.util.ui 
- > 9.3, org.openide.util > 9.3, org.openide.util.lookup > 8.12, org.op
- enide.windows > 6.50
-OpenIDE-Module-Java-Dependencies: Java > 1.8
+ n/1 > 1.7, org.netbeans.api.progress/1 > 1.40, org.netbeans.api.progr
+ ess.nb > 1.40, org.openide.awt > 7.2, org.openide.dialogs > 7.27, org
+ .openide.filesystems > 9.0, org.openide.util.ui > 9.3, org.openide.ut
+ il > 9.3, org.openide.util.lookup > 8.0, org.openide.windows > 6.6
+OpenIDE-Module-Java-Dependencies: Java > 1.6
 OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
  eada11289a66f7
 AutoUpdate-Show-In-Client: false
-OpenIDE-Module: org.netbeans.api.search
-OpenIDE-Module-Localizing-Bundle: org/netbeans/api/search/Bundle.prope
- rties
-OpenIDE-Module-Specification-Version: 1.28
+OpenIDE-Module: org.netbeans.spi.quicksearch
+OpenIDE-Module-Layer: org/netbeans/modules/quicksearch/resources/layer
+ .xml
+OpenIDE-Module-Localizing-Bundle: org/netbeans/spi/quicksearch/Bundle.
+ properties
+OpenIDE-Module-Specification-Version: 1.34
 OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
 

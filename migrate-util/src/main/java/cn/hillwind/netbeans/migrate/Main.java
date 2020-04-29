@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 //        fixBundles();
         fixManifestFiles();
-        handlePlatform("api.search", "search");
+//        handlePlatform("api.search", "search");
 
     }
 
@@ -81,7 +81,7 @@ public class Main {
         handleModule("org-netbeans-api-progress-nb.jar", "progress-swing");
         handleModule("org-netbeans-modules-progress-ui.jar", "progress-ui");
         handleModule("org-netbeans-modules-queries.jar", "queries");
-        handleModule("org-netbeans-api-search.jar", "quicksearch");
+        handleModule("org-netbeans-spi-quicksearch.jar", "quicksearch");
 //        handleModule("core.kit", "rcp");
         handleModule("org-netbeans-modules-sampler.jar", "sampler");
         handleModule("org-netbeans-api-search.jar", "search");

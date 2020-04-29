@@ -51,9 +51,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.formdev</groupId>
-            <artifactId>flatlaf</artifactId>
-            <version>0.32</version>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>lib-flatlaf</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>

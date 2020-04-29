@@ -226,6 +226,9 @@ public final class NbProblemDisplayer {
                     r.write();
                 }
             }
+            for(String mod : dependentModules){
+                writeTo.append("\nTONY:\t").append(mod);
+            }
             if (!dependentModules.isEmpty()) {
                 writeTo.append("\n\t").append(NbBundle.getMessage(NbProblemDisplayer.class, "MSG_also_dep_modules", dependentModules.size()));
             }
