@@ -1,6 +1,7 @@
 package cn.hillwind.netbeans.migrate;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
@@ -38,7 +39,7 @@ public class Main {
         handleModule("org-netbeans-core.jar", "core");
         handleModule("org-netbeans-core-execution.jar", "core-execution");
         handleModule("org-netbeans-core-network.jar", "core-network");
-        handleModule("org-netbeans-core-ui.jar","core-ui");
+        handleModule("org-netbeans-core-ui.jar", "core-ui");
         handleModule("org-netbeans-core-windows.jar", "core-windows");
 
         handleModule("org-netbeans-swing-laf-dark.jar", "dark-theme");
@@ -100,31 +101,43 @@ public class Main {
     }
 
     private static void handleModule(String srcJarPath, String targetModuleDir) {
-        handlePlatformMF("modules/" + srcJarPath,targetModuleDir);
+        handlePlatformMF("modules/" + srcJarPath, targetModuleDir);
     }
 
     private static void handleHarnessMf(String srcJarPath, String targetModuleDir) {
-        copyMf(new File(HARNESS_JAR_DIR,"modules/" + srcJarPath), new File(targetModuleDir,"src/main/resources/META-INF/MANIFEST.MF"));
+        File jar = new File(HARNESS_JAR_DIR, "modules/" + srcJarPath);
+        copyMf(jar, targetModuleDir);
+        copyLicense(jar, targetModuleDir);
     }
 
     private static void handleLib(String srcJarPath, String targetModuleDir) {
-        handlePlatformMF("lib/" + srcJarPath,targetModuleDir);
+        handlePlatformMF("lib/" + srcJarPath, targetModuleDir);
     }
 
     private static void handleCore(String srcJarPath, String targetModuleDir) {
-        handlePlatformMF("core/" + srcJarPath,targetModuleDir);
+        handlePlatformMF("core/" + srcJarPath, targetModuleDir);
     }
 
-    private static void handlePlatformMF(String srcJarPath, String targetModuleDir){
-        copyMf(new File(PLATFORM_JAR_DIR,srcJarPath), new File(targetModuleDir,"src/main/resources/META-INF/MANIFEST.MF"));
+    private static void handlePlatformMF(String srcJarPath, String targetModuleDir) {
+        File jar = new File(PLATFORM_JAR_DIR, srcJarPath);
+        copyMf(jar, targetModuleDir);
+        copyLicense(jar, targetModuleDir);
     }
 
-    private static final String MANIFEST_ENTRY = "META-INF/MANIFEST.MF";
-    public static final void copyMf(File srcJarFile, File targetFile) {
+    public static final void copyMf(File srcJarFile, String targetModuleDir) {
+        copyJarEntry(srcJarFile, "META-INF/MANIFEST.MF", new File(targetModuleDir, "src/main/resources/META-INF/MANIFEST.MF"));
+    }
+
+    public static final void copyLicense(File srcJarFile, String targetModuleDir) {
+        copyJarEntry(srcJarFile, "META-INF/LICENSE", new File(targetModuleDir, "src/main/resources/META-INF/LICENSE"));
+        copyJarEntry(srcJarFile, "META-INF/NOTICE", new File(targetModuleDir, "src/main/resources/META-INF/NOTICE"));
+    }
+
+    public static final void copyJarEntry(File srcJarFile, String entryName, File targetFile) {
         JarFile jar = null;
         try {
             jar = new JarFile(srcJarFile);
-            JarEntry entry = jar.getJarEntry(MANIFEST_ENTRY);
+            JarEntry entry = jar.getJarEntry(entryName);
             if (entry != null) {
                 //noinspection ResultOfMethodCallIgnored
                 targetFile.getParentFile().mkdirs();
