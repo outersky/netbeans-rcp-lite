@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: com.sun.jna.platform.*, com.sun.jna.pl
+ atform.dnd.*, com.sun.jna.platform.linux.*, com.sun.jna.platform.mac.
+ *, com.sun.jna.platform.unix.*, com.sun.jna.platform.unix.solaris.*, 
+ com.sun.jna.platform.win32.*, com.sun.jna.platform.win32.COM.*, com.s
+ un.jna.platform.win32.COM.util.*, com.sun.jna.platform.win32.COM.util
+ .annotation.*, com.sun.jna.platform.wince.*
+OpenIDE-Module-Module-Dependencies: org.netbeans.libs.jna/2 > 2.1
+OpenIDE-Module-Java-Dependencies: Java > 1.6
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.libs.jna.platform/2
+OpenIDE-Module-Localizing-Bundle: org/netbeans/libs/jna/platform/Bundl
+ e.properties
+OpenIDE-Module-Specification-Version: 2.2
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+Class-Path: ext/jna-platform-5.4.0.jar
+
