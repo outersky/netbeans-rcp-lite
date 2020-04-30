@@ -18,6 +18,10 @@
  */
 package org.netbeans;
 
+import org.openide.util.Lookup;
+import org.openide.util.LookupEvent;
+import org.openide.util.LookupListener;
+
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLStreamHandler;
@@ -27,9 +31,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.openide.util.Lookup;
-import org.openide.util.LookupEvent;
-import org.openide.util.LookupListener;
 
 /**
  * A stream handler factory that delegates to others in lookup.
@@ -45,25 +46,25 @@ public class ProxyURLStreamHandlerFactory implements URLStreamHandlerFactory, Lo
         LOG.log(Level.FINER, null, new Exception("Initialized by")); // NOI18N
         if (!proxyFactoryInitialized) {
             if (!ProxyURLStreamHandlerFactory.class.getClassLoader().getClass().getName().equals("com.sun.jnlp.JNLPClassLoader")) { // #196970
-            try {
-                List<Field> candidates = new ArrayList<Field>();
-                for (Field f : URL.class.getDeclaredFields()) {
-                    if (f.getType() == URLStreamHandler.class) {
-                        candidates.add(f);
+                try {
+                    List<Field> candidates = new ArrayList<Field>();
+                    for (Field f : URL.class.getDeclaredFields()) {
+                        if (f.getType() == URLStreamHandler.class) {
+                            candidates.add(f);
+                        }
+                    }
+                    if (candidates.size() != 1) {
+                        throw new Exception("No, or multiple, URLStreamHandler-valued fields in URL: " + candidates);
+                    }
+                    Field f = candidates.get(0);
+                    f.setAccessible(true);
+                    originalJarHandler = (URLStreamHandler) f.get(new URL("jar:file:/sample-1.0.0.jar!/"));
+                    LOG.log(Level.FINE, "found originalJarHandler: {0}", originalJarHandler);
+                } catch (Throwable t) {
+                    if (originalJarHandler == null) {
+                        LOG.log(Level.SEVERE, "No way to find original stream handler for jar protocol", t); // NOI18N
                     }
                 }
-                if (candidates.size() != 1) {
-                    throw new Exception("No, or multiple, URLStreamHandler-valued fields in URL: " + candidates);
-                }
-                Field f = candidates.get(0);
-                f.setAccessible(true);
-                originalJarHandler = (URLStreamHandler) f.get(new URL("jar:file:/sample.jar!/"));
-                LOG.log(Level.FINE, "found originalJarHandler: {0}", originalJarHandler);
-            } catch (Throwable t) {
-                if (originalJarHandler == null) {
-                    LOG.log(Level.SEVERE, "No way to find original stream handler for jar protocol", t); // NOI18N
-                }
-            }
             }
             try {
                 URL.setURLStreamHandlerFactory(new ProxyURLStreamHandlerFactory(null));
@@ -110,12 +111,20 @@ public class ProxyURLStreamHandlerFactory implements URLStreamHandlerFactory, Lo
 
     @Override
     public URLStreamHandler createURLStreamHandler(String protocol) {
+        LOG.log(Level.WARNING, "register protocol: " + protocol);
         if (protocol.equals("jar")) {
             return originalJarHandler != null ? new JarClassLoader.JarURLStreamHandler(originalJarHandler) : null;
         } else if (protocol.equals("file") || protocol.equals("http") || protocol.equals("https") || protocol.equals("resource")) { // NOI18N
             // Well-known handlers in JRE. Do not try to initialize lookup, etc.
             // (delegate already ignores these, but we cannot afford to look for URLSHFs in default lookup either.)
             return null;
+        } else if (protocol.equals("nbres") || protocol.equals("nbresloc") ) { // NOI18N
+            try {
+                return (URLStreamHandler) Class.forName("org.netbeans.core.startup.NbResourceStreamHandler").newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
         } else {
             if (delegate != null) {
                 URLStreamHandler h = delegate.createURLStreamHandler(protocol);
