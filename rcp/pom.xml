@@ -142,6 +142,18 @@
 
         <dependency>
             <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>templates</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
+            <artifactId>svg-loader</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hillwind.netbeans</groupId>
             <artifactId>lib-flatlaf</artifactId>
             <version>1.0.0</version>
         </dependency>

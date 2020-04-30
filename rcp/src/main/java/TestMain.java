@@ -1,5 +1,7 @@
+import org.netbeans.Main;
+
 public class TestMain {
     public static void main(String[] args) throws Exception {
-        org.netbeans.Main.main(args);
+        Main.main(args);
     }
 }
