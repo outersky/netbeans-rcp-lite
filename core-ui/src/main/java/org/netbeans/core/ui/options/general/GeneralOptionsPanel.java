@@ -692,13 +692,11 @@ private void bMoreProxyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         // 188767: editor.getTags() can take long time => fill the combo
         // with the selected item only for now and load the rest of its content
         // outside event-dispatch thread
-        if(editor!=null){
-            cbWebBrowser.addItem(editor.getAsText());
-        }
+        cbWebBrowser.addItem(editor.getAsText());
         RequestProcessor.getDefault().post(new Runnable() {
             @Override
             public void run() {
-                final String[] tags = editor == null ? new String[0] : editor.getTags ();
+                final String[] tags = editor.getTags ();
                 EventQueue.invokeLater(new Runnable() {
                     @Override
                     public void run() {
@@ -776,7 +774,7 @@ private void bMoreProxyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         if (editor == null) {
             editor = Lookup.getDefault().lookup(HtmlBrowser.FactoryEditor.class);
         }
-        String browser = editor==null ? "EMPTY" : editor.getAsText();
+        String browser = editor.getAsText();
         // web browser settings are hidden in platform
         if (cbWebBrowser.isVisible() && browser != null && !browser.equals((String) cbWebBrowser.getSelectedItem())) {
             return true;
