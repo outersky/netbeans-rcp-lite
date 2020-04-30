@@ -1,6 +1,14 @@
 # netbeans-rcp-lite
 
-The original netbeans project uses ant to build, I just tried to remove all build magic and make it a simple maven project. 
+A lite RCP(Rich Client Platform) for building desktop applications.
+
+## Why creating netbeans-rcp-lite?
+
+1: Netbeans platform is a very great product to based on.
+
+1: Make it a maven project. 
+
+1: Simplify the module system in netbeans.
 
 ## build
 
