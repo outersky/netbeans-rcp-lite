@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: org.apache.batik.*, org.apache.batik.a
+ nim.*, org.apache.batik.anim.dom.*, org.apache.batik.anim.timing.*, o
+ rg.apache.batik.anim.values.*, org.apache.batik.bridge.*, org.apache.
+ batik.bridge.svg12.*, org.apache.batik.constants.*, org.apache.batik.
+ css.dom.*, org.apache.batik.css.engine.*, org.apache.batik.css.engine
+ .sac.*, org.apache.batik.css.engine.value.*, org.apache.batik.css.eng
+ ine.value.css2.*, org.apache.batik.css.engine.value.svg.*, org.apache
+ .batik.css.engine.value.svg12.*, org.apache.batik.css.parser.*, org.a
+ pache.batik.dom.*, org.apache.batik.dom.events.*, org.apache.batik.do
+ m.svg.*, org.apache.batik.dom.svg12.*, org.apache.batik.dom.traversal
+ .*, org.apache.batik.dom.util.*, org.apache.batik.dom.xbl.*, org.apac
+ he.batik.ext.awt.*, org.apache.batik.ext.awt.color.*, org.apache.bati
+ k.ext.awt.font.*, org.apache.batik.ext.awt.g2d.*, org.apache.batik.ex
+ t.awt.geom.*, org.apache.batik.ext.awt.image.*, org.apache.batik.ext.
+ awt.image.renderable.*, org.apache.batik.ext.awt.image.rendered.*, or
+ g.apache.batik.ext.awt.image.spi.*, org.apache.batik.ext.swing.*, org
+ .apache.batik.gvt.*, org.apache.batik.gvt.event.*, org.apache.batik.g
+ vt.filter.*, org.apache.batik.gvt.flow.*, org.apache.batik.gvt.font.*
+ , org.apache.batik.gvt.renderer.*, org.apache.batik.gvt.text.*, org.a
+ pache.batik.i18n.*, org.apache.batik.parser.*, org.apache.batik.scrip
+ t.*, org.apache.batik.script.jpython.*, org.apache.batik.script.rhino
+ .*, org.apache.batik.util.*, org.apache.batik.util.io.*, org.apache.b
+ atik.util.resources.*, org.apache.batik.w3c.dom.*, org.apache.batik.w
+ 3c.dom.events.*, org.apache.batik.xml.*, org.apache.xmlgraphics.fonts
+ .*, org.apache.xmlgraphics.image.*, org.apache.xmlgraphics.image.code
+ c.png.*, org.apache.xmlgraphics.image.codec.tiff.*, org.apache.xmlgra
+ phics.image.codec.util.*, org.apache.xmlgraphics.image.loader.*, org.
+ apache.xmlgraphics.image.loader.cache.*, org.apache.xmlgraphics.image
+ .loader.impl.*, org.apache.xmlgraphics.image.loader.impl.imageio.*, o
+ rg.apache.xmlgraphics.image.loader.pipeline.*, org.apache.xmlgraphics
+ .image.loader.spi.*, org.apache.xmlgraphics.image.loader.util.*, org.
+ apache.xmlgraphics.image.rendered.*, org.apache.xmlgraphics.image.wri
+ ter.*, org.apache.xmlgraphics.image.writer.imageio.*, org.apache.xmlg
+ raphics.image.writer.internal.*, org.apache.xmlgraphics.io.*, org.apa
+ che.xmlgraphics.java2d.*, org.apache.xmlgraphics.java2d.color.*, org.
+ apache.xmlgraphics.java2d.color.profile.*, org.apache.xmlgraphics.jav
+ a2d.ps.*, org.apache.xmlgraphics.ps.*, org.apache.xmlgraphics.ps.dsc.
+ *, org.apache.xmlgraphics.ps.dsc.events.*, org.apache.xmlgraphics.ps.
+ dsc.tools.*, org.apache.xmlgraphics.util.*, org.apache.xmlgraphics.ut
+ il.dijkstra.*, org.apache.xmlgraphics.util.i18n.*, org.apache.xmlgrap
+ hics.util.io.*, org.apache.xmlgraphics.util.uri.*, org.apache.xmlgrap
+ hics.xmp.*, org.apache.xmlgraphics.xmp.merge.*, org.apache.xmlgraphic
+ s.xmp.schemas.*, org.apache.xmlgraphics.xmp.schemas.pdf.*, org.w3c.cs
+ s.sac.*, org.w3c.css.sac.helpers.*, org.w3c.dom.smil.*, org.w3c.dom.s
+ vg.*
+OpenIDE-Module-Java-Dependencies: Java > 1.6
+OpenIDE-Module-Build-Version: 11.3-6b879cb782eaa4f13a731aff82eada11289
+ a66f7
+OpenIDE-Module-Specification-Version: 1.0.0.1
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.netbeans.libs.batik.read
+OpenIDE-Module-Implementation-Version: 1
+OpenIDE-Module-Localizing-Bundle: org/netbeans/libs/batik/read/Bundle.
+ properties
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+Class-Path: ext/batik-constants-1.12.jar ext/batik-util-1.12.jar ext/b
+ atik-svg-dom-1.12.jar ext/batik-xml-1.12.jar ext/batik-anim-1.12.jar 
+ ext/batik-gvt-1.12.jar ext/batik-dom-1.12.jar ext/batik-bridge-1.12.j
+ ar ext/batik-css-1.12.jar ext/batik-i18n-1.12.jar ext/batik-ext-1.12.
+ jar ext/batik-script-1.12.jar ext/xmlgraphics-commons-2.4.jar ext/bat
+ ik-parser-1.12.jar ext/xml-apis-ext-1.3.04.jar ext/batik-awt-util-1.1
+ 2.jar
+

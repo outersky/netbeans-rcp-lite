@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.5
+Created-By: 1.8.0_191-b12 (Oracle Corporation)
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Module-Dependencies: org.netbeans.libs.batik.read > 1.0
+ , org.openide.util > 9.3, org.openide.util.ui > 9.14, org.openide.uti
+ l.lookup > 8.14
+OpenIDE-Module-Java-Dependencies: Java > 1.7
+OpenIDE-Module-Implementation-Version: 11.3-6b879cb782eaa4f13a731aff82
+ eada11289a66f7
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: org.openide.util.ui.svg
+OpenIDE-Module-Localizing-Bundle: org/openide/util/svg/Bundle.properti
+ es
+OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+

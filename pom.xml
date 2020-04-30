@@ -18,6 +18,10 @@
         <module>lib-flatlaf</module>
         <module>lib-jna</module>
         <module>lib-jna-platform</module>
+        <module>lib-apache-commons-codec</module>
+        <module>lib-apache-commons-io</module>
+        <module>lib-apache-commons-logging</module>
+        <module>lib-batik-read</module>
         <module>lookfeel</module>
         <module>insane</module>
         <module>common-annotations</module>
@@ -26,6 +30,7 @@
 <!--        <module>nbjunit</module>-->
         <module>basic-util</module>
         <module>ui-util</module>
+        <module>svg-loader</module>
         <module>ui-handler</module>
         <module>filesystems</module>
         <module>filesystems-nb</module>

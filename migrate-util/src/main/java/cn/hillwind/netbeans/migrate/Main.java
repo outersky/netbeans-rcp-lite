@@ -20,10 +20,8 @@ public class Main {
     private static final String HARNESS_JAR_DIR = NETBEANS_JAR_DIR + "/harness";
 
     public static void main(String[] args) throws Exception {
-//        fixBundles();
+        fixBundles();
         fixManifestFiles();
-//        handlePlatform("api.search", "search");
-
     }
 
     private static void fixManifestFiles() throws Exception {
@@ -91,6 +89,7 @@ public class Main {
         handleModule("org-openide-options.jar", "settings-options");
         handleCore("core.jar", "startup");
         handleCore("core-base.jar", "startup-base");
+        handleModule("org-openide-util-ui-svg.jar", "svg-loader");
         handleModule("org-netbeans-swing-tabcontrol.jar", "tabcontrol");
         handleModule("org-netbeans-modules-templates.jar", "templates");
         handleModule("org-openide-text.jar", "text");
@@ -222,6 +221,7 @@ public class Main {
         handlePlatform("settings", "settings");
         handlePlatform("openide.options", "settings-options");
         handlePlatform("core.startup", "startup");
+        handlePlatform("openide.util.ui.svg", "svg-loader");
         handlePlatform("core.startup.base", "startup-base");
         handlePlatform("o.n.swing.tabcontrol", "tabcontrol");
         handlePlatform("templates", "templates");

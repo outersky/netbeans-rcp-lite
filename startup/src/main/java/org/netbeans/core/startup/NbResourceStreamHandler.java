@@ -40,6 +40,10 @@ import org.openide.util.URLStreamHandlerRegistration;
         
         public static final String PROTOCOL_SYSTEM_RESOURCE = "nbres"; // NOI18N
         public static final String PROTOCOL_LOCALIZED_SYSTEM_RESOURCE = "nbresloc"; // NOI18N
+
+        public NbResourceStreamHandler(){
+            System.out.println("====================== init NbResourceStreamHandler");
+        }
         
         public URLConnection openConnection(URL u) throws IOException {
             if (u.getProtocol().equals(PROTOCOL_SYSTEM_RESOURCE)) {
