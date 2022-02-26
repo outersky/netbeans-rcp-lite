@@ -19,7 +19,7 @@ mvn clean install
 ## run rcp demo
 
 ```
-mvn -p rcp
+mvn -pl rcp
 ```
 
 or in Netbeans, right click rcp project, and click `Run`
